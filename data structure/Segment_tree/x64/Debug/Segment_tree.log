@@ -1,0 +1,13 @@
+﻿  Source.cpp
+C:\Users\micky\OneDrive - 元智大學\文件\上課文件\資傑\Segment_tree\Source.cpp(41,11): warning C4244: '正在初始化': 將 '__int64' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\micky\OneDrive - 元智大學\文件\上課文件\資傑\Segment_tree\Source.cpp(55,11): warning C4244: '正在初始化': 將 '__int64' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\micky\OneDrive - 元智大學\文件\上課文件\資傑\Segment_tree\Source.cpp(85,11): warning C4244: '正在初始化': 將 '__int64' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\micky\OneDrive - 元智大學\文件\上課文件\資傑\Segment_tree\Source.cpp(117,11): warning C4244: '正在初始化': 將 '__int64' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\micky\OneDrive - 元智大學\文件\上課文件\資傑\Segment_tree\Source.cpp(133,11): warning C4244: '正在初始化': 將 '__int64' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\micky\OneDrive - 元智大學\文件\上課文件\資傑\Segment_tree\Source.cpp(154,21): warning C4244: '+=': 將 '_Ty' 轉換為 'int'，由於類型不同，可能導致資料遺失
+          with
+          [
+              _Ty=__int64
+          ]
+C:\Users\micky\OneDrive - 元智大學\文件\上課文件\資傑\Segment_tree\Source.cpp(163,12): warning C4244: 'return': 將 '__int64' 轉換為 'int'，由於類型不同，可能導致資料遺失
+  Segment_tree.vcxproj -> C:\Users\micky\OneDrive - 元智大學\文件\上課文件\資傑\Segment_tree\x64\Debug\Segment_tree.exe
