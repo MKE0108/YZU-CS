@@ -495,33 +495,12 @@ public:
                 M = itr;
                 itr = itr->left;
             }
-            if(M == scaryVal.myHead->left) leftf = 1;
-            if (M == scaryVal.myHead->right) rightf = 1;
+            if (M == scaryVal.myHead->left) scaryVal.myHead->left = (M->right->isNil == 0)?M->right: M->parent;
+            if (M == scaryVal.myHead->right) scaryVal.myHead->right = (M->left->isNil == 0) ? M->left : M->parent;
+
             p->myval = M->myval;
             
             scaryVal.eraseDegreeOne(M);
-
-            if(leftf)
-            {
-                TreeNode< key_type >* temp = scaryVal.myHead;
-                TreeNode< key_type >* itr = scaryVal.myHead->parent;
-                while (itr->isNil != 1) {
-                    temp = itr;
-                    itr = itr->left;
-                }
-                scaryVal.myHead->left = temp;
-            }
-            if (rightf)
-            {
-                TreeNode< key_type >* temp = scaryVal.myHead;
-                TreeNode< key_type >* itr = scaryVal.myHead->parent;
-                while (itr->isNil != 1) {
-                    temp = itr;
-                    itr = itr->right;
-                }
-                scaryVal.myHead->right = temp;
-            }
-
             return 1;
         }
     }
