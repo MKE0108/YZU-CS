@@ -491,7 +491,7 @@ public:
                 M = itr;
                 itr = itr->left;
             }
-            if (M == scaryVal.myHead->left) scaryVal.myHead->left = (M->right->isNil == 0)?M->right: M->parent;
+            if (M == scaryVal.myHead->left) scaryVal.myHead->left = (M->right->isNil == 0) ? M->right : M->parent;
             if (M == scaryVal.myHead->right) scaryVal.myHead->right = (M->left->isNil == 0) ? M->left : M->parent;
 
             p->myval = M->myval;
