@@ -52,6 +52,7 @@ public:
     {
         if (flag == 'L') NewPar->left = Child;
         if (flag == 'R') NewPar->right = Child;
+        if (flag == 'P') NewPar->parent = Child;
         if (Child->isNil == 0) { // not head
             Child->parent = NewPar;
         }
@@ -192,8 +193,7 @@ public:
 
         if (guPar->isNil == 1) //gu is root
         {
-            guPar->parent = pu;
-            pu->parent = guPar;
+            LinkStart(guPar, pu, 'P');
         }
         else //gu is not root
         {
@@ -230,8 +230,7 @@ public:
 
         if (guPar->isNil == 1) //gu is root
         {
-            guPar->parent = pu;
-            pu->parent = guPar;
+            LinkStart(guPar, pu, 'P');
         }
         else //gu is not root
         {
@@ -257,10 +256,7 @@ public:
         {
             // set child to be the new root
             child->color = Black;
-            myHead->parent = child;
-            child->parent = myHead;
-            if (myHead->left == p) myHead->left = child;
-            if (myHead->right == p) myHead->right = child;
+            LinkStart(myHead, child, 'P');
         }
         else
         {
