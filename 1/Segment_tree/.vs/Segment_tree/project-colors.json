@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "49e7dc1f-878e-4e05-8671-6999755763b1": {
+      "ProjectGuid": "49e7dc1f-878e-4e05-8671-6999755763b1",
+      "DisplayName": "Segment_tree",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
